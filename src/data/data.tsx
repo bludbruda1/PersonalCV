@@ -69,24 +69,35 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Geoff Topeto.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Wellington (New Zealand) based <strong className="text-stone-100">Product Owner</strong>, currently
+        working at the{' '}
+        <a href="https://www.bnz.co.nz/" target="_blank">
+          <strong className="text-stone-100">Bank of New Zealand (BNZ)</strong>
+        </a>
+        . Our product team works in conjuction with <strong className="text-stone-100">Design</strong> to help build a
+        sustainable, accesible and readily available <strong className="text-stone-100">Design System</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I'll be playing{' '}
+        <a href="https://www.ea.com/games/apex-legends" target="_blank">
+          <strong className="text-stone-100">Apex Legends</strong>
+        </a>
+        , watching sport such as <strong className="text-stone-100">Rugby</strong> or{' '}
+        <strong className="text-stone-100">Basketball</strong>, or I'll be eating. Follow my foodie instagram at{' '}
+        <a href="https://www.instagram.com/faddywellyeatz/" target="_blank">
+          <strong className="text-stone-100">@FaddyWellyEatz</strong>
+        </a>
+        .
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/data/GeoffreyTopeto_CV.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -108,12 +119,11 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Wellington, NZ', Icon: MapIcon},
+    {label: 'Nationality', text: 'Samoan', Icon: FlagIcon},
+    {label: 'Interests', text: 'Gaming, Sports, Eating', Icon: SparklesIcon},
+    {label: 'Study', text: 'Victoria University of Wellington', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Bank of New Zealand (BNZ)', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -365,9 +375,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://nz.linkedin.com/in/geoffreytopeto'},
 ];
