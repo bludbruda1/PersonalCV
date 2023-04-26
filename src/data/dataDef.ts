@@ -1,4 +1,3 @@
-import {StaticImageData} from 'next/image';
 import {FC, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
@@ -74,37 +73,13 @@ export interface SkillGroup {
 }
 
 /**
- * Portfolio section
- */
-export interface PortfolioItem {
-  title: string;
-  description: string;
-  url: string;
-  image: string | StaticImageData;
-}
-
-/**
  * Resume section
  */
 export interface TimelineItem {
   date: string;
   location: string;
   title: string;
-  content: JSX.Element;
-}
-
-/**
- * Testimonial section
- */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
+  content?: JSX.Element;
 }
 
 /**
