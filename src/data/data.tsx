@@ -49,7 +49,7 @@ export const heroData: Hero = {
           <strong className="text-stone-100">Bank of New Zealand (BNZ)</strong>
         </a>
         . Our product team works in conjuction with <strong className="text-stone-100">Design</strong> to help build a
-        sustainable, accesible and readily available <strong className="text-stone-100">Design System</strong> for our
+        sustainable, accessible and readily available <strong className="text-stone-100">Design System</strong> for our
         consuming development teams at the bank.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -209,9 +209,9 @@ export const experience: TimelineItem[] = [
         and incorporating feedback from the team. As a T-shaped team member, I fulfilled various roles such as Product
         Owner, Business Analyst, and even assisted with development tasks where required. I also took on the role of
         team facilitator during quarterly planning. This involved communicating with other teams to understand their
-        requirements and how we could incorporate their work into our quarter plans. I was also responsible for
-        presenting at monthly Guild, Engineering All-Hands, and Testing Guild meetings as well. In addition, I created a
-        set of Cypress automation tests that regressed our Design System site.
+        requirements and how we could incorporate their work into our quarter plans. I was responsible for presenting at
+        monthly Guild, Engineering All-Hands, and Testing Guild meetings as well. In addition, I created a set of
+        Cypress automation tests that regressed our Design System site.
       </p>
     ),
   },
