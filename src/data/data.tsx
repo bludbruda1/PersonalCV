@@ -68,7 +68,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/data/GeoffreyTopeto_CV.pdf',
+      href: 'https://drive.google.com/file/d/1bIXFlJPCtWFU_JQNMAJynnerN3yuWVj9/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
