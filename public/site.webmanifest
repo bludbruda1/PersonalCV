@@ -1,9 +1,9 @@
 {
-  "name": "react-resume-template",
-  "short_name": "react-resume-template",
+  "name": "Geoffrey Topeto CV",
+  "short_name": "Geoff-Topeto-CV",
   "icons": [
-    {"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"},
-    {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512"}
+    {"src": "/profilepic.jpg", "type": "image/png", "sizes": "192x192"},
+    {"src": "/profilepic.jpg", "type": "image/png", "sizes": "512x512"}
   ],
   "theme_color": "#515455",
   "background_color": "#515455",
