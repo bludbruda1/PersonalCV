@@ -89,7 +89,7 @@ export const aboutData: About = {
   description: `After years of experience in the IT industry, I’ve discovered a true passion for problem solving, delivery, and being a leader within a team. Motivating and enabling my team to do the best work they can while maintaining a balance of fun is what makes me passionate about my field of work.`,
   aboutItems: [
     {label: 'Location', text: 'Wellington, NZ', Icon: MapIcon},
-    {label: 'Nationality', text: 'Samoan', Icon: FlagIcon},
+    {label: 'Ethnicity', text: 'Samoan', Icon: FlagIcon},
     {label: 'Interests', text: 'Gaming, Sports, Eating', Icon: SparklesIcon},
     {label: 'Study', text: 'Victoria University of Wellington', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Bank of New Zealand (BNZ)', Icon: OfficeBuildingIcon},
