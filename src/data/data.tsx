@@ -16,8 +16,8 @@ import {About, ContactSection, ContactType, Hero, HomepageMeta, SkillGroup, Soci
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Geoffrey Topeto - CV',
+  description: 'Geoffrey Topeto Resume',
 };
 
 /**
@@ -27,11 +27,9 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -41,7 +39,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Geoff Topeto`,
+  name: `Geoffrey Topeto`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -51,7 +49,8 @@ export const heroData: Hero = {
           <strong className="text-stone-100">Bank of New Zealand (BNZ)</strong>
         </a>
         . Our product team works in conjuction with <strong className="text-stone-100">Design</strong> to help build a
-        sustainable, accesible and readily available <strong className="text-stone-100">Design System</strong>.
+        sustainable, accesible and readily available <strong className="text-stone-100">Design System</strong> for our
+        consuming development teams at the bank.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, I'll be playing{' '}
@@ -191,11 +190,12 @@ export const experience: TimelineItem[] = [
     title: 'Product Owner',
     content: (
       <p>
-        Created and delivered clear and realistic roadmaps to our stakeholders. Shipped multiple new components for
-        consuming developing teams in a couple of months as opposed to half a year/a year that it used to take.
-        Confidently presented our quarterly plans to our stakeholders and explained the benefits of the work we plan to
-        do. Engaging our constomers to gather feedback and opportunities for improvement. Creating sprint goals with
-        stories/tasks/bugs for our team to deliver and review on how we did as a team each sprint.
+        During my time as a Product Owner at BNZ, I developed and implemented transparent and practical roadmaps for our
+        stakeholders. I also managed to shorten the time for delivering new components to consuming teams from half a
+        year or a year to a couple of months. Additionally, I presented our quarterly plans to our stakeholders,
+        highlighting the benefits of the work we planned to do. My focus on engaging customers helped me to gather
+        valuable feedback and identify areas for improvement. I also created sprint goals, including stories, tasks, and
+        bug fixes, for our team to complete and review our progress as a team each sprint.
       </p>
     ),
   },
@@ -205,13 +205,13 @@ export const experience: TimelineItem[] = [
     title: 'Senior Automation Tester',
     content: (
       <p>
-        Delivered a test strategy plan for the team to carry out and execute including making a plan and presenting it
-        and taking into account feedback. T-shaped team member who often filled in as a Product Owner or Business
-        Analyst where required. Also jumped in and did some development when we were short on numbers. Became a team
-        facilitator at Quarterly Planning Sessions for our team which involved coordinating with other teams on what
-        they needed and how we can fit their needs into our quarter. Presented at multiple meetings such as our monthly
-        Guild, Engineering All-Hands, and Testing guild. Created a number of Cypress automation tests that regression
-        tested our Design System site
+        I was responsible for delivering a test strategy plan to my team. This included creating a plan, presenting it,
+        and incorporating feedback from the team. As a T-shaped team member, I fulfilled various roles such as Product
+        Owner, Business Analyst, and even assisted with development tasks where required. I also took on the role of
+        team facilitator during quarterly planning. This involved communicating with other teams to understand their
+        requirements and how we could incorporate their work into our quarter plans. I was also responsible for
+        presenting at monthly Guild, Engineering All-Hands, and Testing Guild meetings as well. In addition, I created a
+        set of Cypress automation tests that regressed our Design System site.
       </p>
     ),
   },
@@ -221,10 +221,12 @@ export const experience: TimelineItem[] = [
     title: 'Mobile Test Analyst',
     content: (
       <p>
-        Successfully lead our team through urgent/time pressured work during the Covid outbreak. T-shaped team member
-        who often did a bit of everything from Product Owner work to Development on the apps. I put myself in a position
-        to best help the team. Facilitated and lead team ceremonies such as retrospectives, planning, and multiple
-        discussions.
+        During the Covid-19 outbreak, I successfully led our team through urgent and time-sensitive work. I went beyond
+        my role and stepped up as a team leader, which showcased my ability to step up in high-pressure circumstances.
+        As a T-shaped team member, I was versatile and contributed to various tasks ranging from Product Owner work to
+        Development on the apps. I made a conscious effort to position myself to best support the team in any way
+        possible. I took on the responsibility of facilitating team ceremonies. This included retrospectives, planning,
+        and backlog refinement.
       </p>
     ),
   },
@@ -236,27 +238,23 @@ export const experience: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description:
+    'If you wish to get in touch with me, you are welcome to leave me a message. Alternatively, you can send me a LinkedIn invite.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'geoffreytopeto@gmail.com',
+      href: 'mailto:geoffreytopeto@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Wellington, New Zealand',
+      href: 'https://goo.gl/maps/tjH4pWHocqusJZkSA',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      type: ContactType.LinkedIn,
+      text: 'Geoffrey Topeto',
+      href: 'https://nz.linkedin.com/in/geoffreytopeto',
     },
   ],
 };
