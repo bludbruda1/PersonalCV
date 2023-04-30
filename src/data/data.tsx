@@ -8,7 +8,7 @@ import {
 } from '@heroicons/react/outline';
 
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/background.jpg';
+import heroImage from '../images/background1.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {About, ContactSection, ContactType, Hero, HomepageMeta, SkillGroup, Social, TimelineItem} from './dataDef';
 
