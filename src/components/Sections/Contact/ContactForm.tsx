@@ -1,12 +1,11 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import axios from 'axios';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
   email: string;
   message: string;
 }
-interface IErrors extends Partial<FormData> {}
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
@@ -31,19 +30,9 @@ const ContactForm: FC = memo(() => {
     [data],
   );
 
-  const [errors, setErrors] = useState<IErrors>({});
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [messageState, setMessageState] = useState('');
-
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      if (Object.keys(errors).length > 0) {
-        return setErrors(errors);
-      }
-      setErrors({});
-      setLoading(true);
       axios
         .post('/api/mail', {
           name: data.name,
@@ -52,20 +41,12 @@ const ContactForm: FC = memo(() => {
         })
         .then(res => {
           if (res.status === 200) {
-            setValues({name: '', email: '', message: ''});
-            setLoading(true);
-            setSuccess(true);
-            setMessageState(res.data.message);
+            setData({name: '', email: '', message: ''});
+            console.log('success');
           } else {
-            setLoading(false);
-            setMessageState(res.data.message);
+            console.log('not successful');
           }
-        })
-        .catch(err => {
-          setLoading(false);
-          setMessageState(String(err.message));
         });
-      setLoading(false);
     },
     [data],
   );
