@@ -53,7 +53,7 @@ const ContactForm: FC = memo(() => {
         .then(res => {
           if (res.status === 200) {
             setValues({name: '', email: '', message: ''});
-            setLoading(false);
+            setLoading(true);
             setSuccess(true);
             setMessageState(res.data.message);
           } else {
