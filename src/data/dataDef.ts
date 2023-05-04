@@ -28,6 +28,7 @@ export interface Hero {
 
 interface HeroActionItem {
   href: string;
+  target?: string;
   text: string;
   primary?: boolean;
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
