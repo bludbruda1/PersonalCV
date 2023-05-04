@@ -1,10 +1,8 @@
-import axios from 'axios';
-import {FC, memo, useCallback, useMemo, useState} from 'react';
-import React from 'react';
-import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
-import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
+import Snackbar from '@mui/material/Snackbar';
+import axios from 'axios';
+import React, {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -38,6 +36,7 @@ const ContactForm: FC = memo(() => {
   );
 
   const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    event.preventDefault();
     if (reason === 'clickaway') {
       return;
     }
