@@ -1,5 +1,8 @@
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
+import Snackbar from '@mui/material/Snackbar';
 import axios from 'axios';
-import {FC, memo, useCallback, useMemo, useState} from 'react';
+import React, {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -17,6 +20,8 @@ const ContactForm: FC = memo(() => {
     [],
   );
 
+  const [open, setOpen] = React.useState(false);
+
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
@@ -28,6 +33,23 @@ const ContactForm: FC = memo(() => {
       setData({...data, ...fieldData});
     },
     [data],
+  );
+
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    event.preventDefault();
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
   );
 
   const handleSendMessage = useCallback(
@@ -43,6 +65,7 @@ const ContactForm: FC = memo(() => {
           if (res.status === 200) {
             setData({name: '', email: '', message: ''});
             console.log('success');
+            setOpen(true);
           } else {
             console.log('not successful');
           }
@@ -81,6 +104,7 @@ const ContactForm: FC = memo(() => {
         type="submit">
         Send Message
       </button>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} message="Message sent" action={action} />
     </form>
   );
 });
