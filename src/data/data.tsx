@@ -58,7 +58,9 @@ export const heroData: Hero = {
           <strong className="text-stone-100">Apex Legends</strong>
         </a>
         , watching sport such as <strong className="text-stone-100">Rugby</strong> or{' '}
-        <strong className="text-stone-100">Basketball</strong>, or I'll be eating. Follow my foodie instagram at{' '}
+        <strong className="text-stone-100">Basketball</strong>, learning more about investing in{' '}
+        <strong className="text-stone-100">Shares</strong> and{' '}
+        <strong className="text-stone-100">Cryptocurrency</strong>, or I'll be eating. Follow my foodie instagram at{' '}
         <a href="https://www.instagram.com/faddywellyeatz/" target="_blank">
           <strong className="text-stone-100">@FaddyWellyEatz</strong>
         </a>
@@ -91,7 +93,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Wellington, NZ', Icon: MapIcon},
     {label: 'Ethnicity', text: 'Samoan', Icon: FlagIcon},
-    {label: 'Interests', text: 'Gaming, Sports, Eating', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Gaming, Sports, Crypto, Eating', Icon: SparklesIcon},
     {label: 'Study', text: 'Victoria University of Wellington', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Bank of New Zealand (BNZ)', Icon: OfficeBuildingIcon},
   ],
