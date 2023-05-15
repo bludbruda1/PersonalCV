@@ -57,9 +57,9 @@ export const heroData: Hero = {
         <a href="https://www.ea.com/games/apex-legends" target="_blank">
           <strong className="text-stone-100">Apex Legends</strong>
         </a>
-        , watching sport such as <strong className="text-stone-100">Rugby</strong> or{' '}
-        <strong className="text-stone-100">Basketball</strong>, learning more about investing in{' '}
-        <strong className="text-stone-100">Shares</strong> and{' '}
+        , taking my <strong className="text-stone-100">Golden Retriever</strong> Cove for walkies, watching sport such
+        as <strong className="text-stone-100">Rugby</strong> or <strong className="text-stone-100">Basketball</strong>,
+        learning more about investing in <strong className="text-stone-100">Shares</strong> and{' '}
         <strong className="text-stone-100">Cryptocurrency</strong>, or I'll be eating. Follow my foodie instagram at{' '}
         <a href="https://www.instagram.com/faddywellyeatz/" target="_blank">
           <strong className="text-stone-100">@FaddyWellyEatz</strong>
@@ -89,7 +89,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `After years of experience in the IT industry, I’ve discovered a true passion for problem solving, delivery, and being a leader within a team. Motivating and enabling my team to do the best work they can while maintaining a balance of fun is what makes me passionate about my field of work.`,
+  description: `After years of experience in the IT industry, I have discovered a true passion for problem solving, delivery, and being a leader within a team. Motivating and enabling my team to do the best work they can while maintaining a balance of fun is what makes me passionate about my field of work. If you haven't noticed yet, I absolutely love gaming and have been playng video games for most of my life. I also love taking my Golden Retriever Cove for a walk, his tail wagging and zoomies brighten my day. Lastly, I am huge foodie I will literally eat anything (most things lol).`,
   aboutItems: [
     {label: 'Location', text: 'Wellington, NZ', Icon: MapIcon},
     {label: 'Ethnicity', text: 'Samoan', Icon: FlagIcon},
