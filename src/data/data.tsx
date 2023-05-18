@@ -111,7 +111,11 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Testing',
+        name: 'Data driven',
+        level: 10,
+      },
+      {
+        name: 'Planning',
         level: 10,
       },
       {
@@ -119,7 +123,19 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
+        name: 'Testing',
+        level: 10,
+      },
+      {
         name: 'Design systems',
+        level: 9,
+      },
+      {
+        name: 'Road mapping',
+        level: 9,
+      },
+      {
+        name: 'Backlog refinement',
         level: 9,
       },
       {
@@ -157,6 +173,10 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Decision-making',
+        level: 9,
+      },
+      {
+        name: 'Collaboration',
         level: 9,
       },
       {
